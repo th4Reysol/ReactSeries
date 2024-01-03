@@ -1,0 +1,286 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background: linear-gradient(lightyellow, whitesmoke);
+}
+div.head_area{
+  background-color: yellow;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav>ul{
+  display: flex;
+}
+.nav_item {
+  margin-left: 40px;
+  list-style: none;
+}
+
+a.buttons{
+  font: bold;
+  font-weight: 1000;
+  padding: 10px;
+  text-decoration: none;
+  border: solid 5px;
+  border-radius: 60%;
+  border-color: rgb(47, 112, 186);
+}
+
+a:visited{
+  color: black;
+}
+
+a.buttons:hover{
+  font: bold;
+  font-weight: 1000;
+  padding: 10px;
+  text-decoration: none;
+  border: solid 5px black;
+  border-radius: 60%;
+  color: yellow;
+  background-color: black;
+}
+
+img{
+    object-fit: cover;
+}
+
+div.greeting{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+div.articles{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% + 30px);
+  overflow: hidden;
+  
+}
+
+a.articles{
+  padding: 10px;
+  font-family: sans-serif;
+  font-weight: 800;
+  color: whitesmoke;
+  background-color: lightcoral;
+  text-align: center;
+  width: calc(33.3333% - 30px);
+  margin: 0 30px 30px 0;/* 余白 */
+}
+
+a.articles:hover{
+  scale: 1.1;
+  background-color: black;
+  color: yellow;
+}
+
+div.profiles{
+  padding: 10px;
+  text-align: center;
+  border-radius: 80%;
+  width: 50%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(to bottom, rgb(234, 176, 68), rgba(245, 184, 120, 0.971));
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 3.5s;
+  animation-fill-mode: forwards;  
+  word-break: break-all;
+}
+
+div.careers{
+  padding: 32px;
+  text-align: center;
+  width: 50%;
+  border-radius: 80%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(to bottom, lightskyblue, rgb(21, 238, 238));
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 3.5s;
+  animation-fill-mode: forwards;  
+  word-break: break-all;
+}
+
+div.jobs{
+  padding: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  width: 50%;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 3.5s;
+  animation-fill-mode: forwards;   
+}
+
+
+div.jobs>h3{
+  font-size: 2rem;
+  color: Black;
+  text-decoration: underline;
+}
+
+div.jobs>p{
+  color: blue;
+}
+
+div>ul>li{
+  list-style: none;
+}
+
+div.jobs:nth-child(odd){
+  background-color: lightcoral;
+  font-size: 15px;
+  border-radius: 80%;
+  width: 50%;
+  float: left;
+  clear: both;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+div.jobs:nth-child(even){
+  background-color: lightsalmon;
+  font-size: 15px;
+  border-radius: 80%;
+  width: 50%;
+  float: right;
+  clear: both;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+span.lnk{
+  color: blue;
+  text-decoration: underline blue;
+  font-weight: 800;
+}
+
+div>h2{
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 16px;
+  color: rgba(0, 0, 0, 0.811);
+  text-decoration: underline;
+}
+
+div#closing{
+  clear: both;
+  text-align: center;
+}
+
+div#closing>h2{
+  margin-top: 20px;
+  font-size: 2rem;
+  background-color: black;
+  color: Yellow;
+  text-align: center;
+}
+
+div.skills{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 10px;
+  width: 25%;
+  margin-top: 28px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgba(0, 0, 0, 0.811);
+  text-align: center;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: 750;
+  background: linear-gradient(to right, lightyellow, rgb(245, 116, 116));
+  border-radius: 90%;  
+}
+div.appealing{
+  font-weight: 1200;
+  padding: 20px;
+}
+
+div.recent_work>p{
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: underline blue;
+}
+
+div.recent_work>ul>li{
+  list-style: square;
+  width: fit-content;
+  margin: auto;
+}
+
+div.withYou>h2{
+  margin-top: 24px;
+  text-align: center;
+}
+
+div.withYou>p{
+  text-align: center;
+}
+
+div.services>h2{
+  margin-top: 36px;
+  color: yellow;
+  background: linear-gradient(to right, black, rgba(0, 0, 0, 0.281));
+}
+
+details{
+  text-align: center;
+  margin-top: 25px;
+}
+
+#s_comment{
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(0, 0, 0);
+  
+}
+
+#price{
+  color: blue;
+}
+
+#k_comment{
+  text-align: center;
+}
+
+summary{
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+div.prg>p, div.prg>h3{
+  margin-top: 12px;
+}
+
+div.closingAdd>p{
+  margin-top: 30px;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
